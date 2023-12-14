@@ -58,17 +58,17 @@ h2{
 
     .card {
         width: auto;
-        margin: 0 auto; /* Center the card */
+        margin: 0 auto; 
         height: auto;
     }
 
     .heroes, .villains {
-        justify-content: center; /* Center the cards for heroes and villains */
+        justify-content: center; 
     }
 
     img {
         height: auto;
-        max-width: 100%; /* Ensure images are not larger than their container */
+        max-width: 100%; 
     }
 
     h1, p, h2 {

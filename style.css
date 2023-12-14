@@ -1,0 +1,82 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    margin-left: 4vh;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    
+}
+
+.card{
+    height: 280px;
+    width: 140px;
+    margin-right: 10px;
+    border: 3px solid #DBDBDB;
+    border-radius: 11px;
+    padding: 20px;
+}
+
+.heroes{
+    display: flex;
+    justify-content: end;
+}
+
+.villains{
+    display: flex;
+    justify-content: start;
+}
+
+p{
+    font-size: 22px;
+    margin-bottom: 7px;
+    margin-top: -3px;
+}
+
+h1{
+    font-size: 62px;
+    margin-top: -2px;
+}
+
+ 
+img{
+    margin-left: 2px;
+    height: 16vh;
+}
+
+h2{
+    font-size: 60px;
+    height: 1px;
+    margin-top: -10px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat( 1fr);
+        margin-left: 1vh;
+    }
+
+    .card {
+        width: auto;
+        margin: 0 auto; /* Center the card */
+        height: auto;
+    }
+
+    .heroes, .villains {
+        justify-content: center; /* Center the cards for heroes and villains */
+    }
+
+    img {
+        height: auto;
+        max-width: 100%; /* Ensure images are not larger than their container */
+    }
+
+    h1, p, h2 {
+        font-size: smaller; 
+    }
+
+    h1{
+        font-size: 1.6rem;
+    }
+
+}
